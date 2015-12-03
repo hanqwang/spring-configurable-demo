@@ -5,13 +5,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableLoadTimeWeaving;
 import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 
+import com.williewheeler.demos.spring.configurable.entity.User;
+
 @SpringBootApplication
 @EnableSpringConfigured
 @EnableLoadTimeWeaving
-public class Demo {
+public class MyApp {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(Demo.class, args);
-		new UnmanagedBean().displayDependency();
+		SpringApplication.run(MyApp.class, args);
+		new User().displayDependencies();
 	}
 }

@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.springframework.beans.factory: DEBUG
+    org.springframework: INFO
